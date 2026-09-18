@@ -57,7 +57,7 @@ class ChatEngine:
         missing = [
             key
             for key in ("base_url", "model", "cf_access_client_id", "cf_access_client_secret")
-            if not str(settings.get(key, "")).strip() or str(settings.get(key)) == "REPLACE_ME"
+            if not str(settings.get(key, "")).strip() or str(settings.get(key, "")) == "REPLACE_ME"
         ]
         if missing:
             raise ChatError("設定が不足しています: " + ", ".join(missing))
@@ -108,6 +108,7 @@ class ChatEngine:
         if self.system_prompt:
             api_messages.append({"role": "system", "content": self.system_prompt})
         api_messages.extend(messages)
+
         payload = {
             "model": self.model,
             "messages": api_messages,

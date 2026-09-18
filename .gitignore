@@ -1,4 +1,7 @@
-.venv/
 __pycache__/
+.venv/
+venv/
 .pytest_cache/
 config/settings.json
+*.pyc
+last_reply.txt
