@@ -1,0 +1,10 @@
+{
+  "base_url": "https://llamacpp.meameme.win",
+  "model": "JonathanColetti/Qwen3.8-27B-Uncensored-GGUF:Q6_K",
+  "cf_access_client_id": "REPLACE_ME",
+  "cf_access_client_secret": "REPLACE_ME",
+  "temperature": 0.7,
+  "max_tokens": 512,
+  "timeout_sec": 120,
+  "thinking_display_mode": "content_first"
+}

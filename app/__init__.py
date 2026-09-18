@@ -1,0 +1,1 @@
+"""Interactive avatar application package."""
